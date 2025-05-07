@@ -8,7 +8,8 @@ import com.hashinology.dictionarycompose.feature_dictionary.data.util.Converters
 
 @Database(
     entities = [WordInfoEntity::class],
-    version = 1
+    version = 1,
+    exportSchema = true
 )
 @TypeConverters(Converters::class)
 abstract class WordInfoDatabase: RoomDatabase() {

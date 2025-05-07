@@ -60,17 +60,19 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 
-    /*// Coroutines
+    // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")*/
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
 
     // Coroutine Lifecycle Scopes
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+
 
     //Dagger - Hilt
     implementation (libs.hilt.android)
     kapt (libs.dagger.hilt.android.compiler)
-    implementation (libs.androidx.hilt.lifecycle.viewmodel)
+
     kapt (libs.androidx.hilt.compiler)
     implementation (libs.hilt.navigation.compose)
 
